@@ -1,0 +1,6 @@
+{
+  "name": "Sri Skin Clinic",
+  "description": "Official website and online appointment booking system for Sri Skin Clinic in Saravanampatti, Coimbatore. Led by Dr. V. Kavitha, M.B.B.S., M.D., D.V.L. (Skin), specialized in Dermatology and Cosmetology.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
