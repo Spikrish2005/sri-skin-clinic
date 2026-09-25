@@ -35,14 +35,22 @@ export const LocationHoursSection: React.FC<LocationHoursSectionProps> = ({ onOp
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <span className="text-teal-600 font-bold uppercase tracking-widest text-xs mb-2 block">
+<<<<<<< HEAD
               Udumalaipettai, Tamil Nadu
+=======
+              Saravanampatti, Coimbatore
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
               Clinic Location &amp; Consultation Timings
             </h2>
           </div>
           <p className="text-slate-500 text-xs sm:text-sm max-w-md leading-relaxed">
+<<<<<<< HEAD
             Conveniently situated on Palani Rd, Udumalaipettai Municipality, Tamil Nadu.
+=======
+            Conveniently situated on Sathy Main Road, Chidambaram Nagar, opposite Central Park apartment near Amman Kovil, Saravanampatti.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
           </p>
         </div>
       </div>
@@ -76,14 +84,23 @@ export const LocationHoursSection: React.FC<LocationHoursSectionProps> = ({ onOp
                 <MapPin className="w-6 h-6 fill-current" />
               </div>
               <span className="mt-2 bg-slate-900/90 text-white text-xs font-bold px-3 py-1 rounded-full border border-teal-500 shadow-md">
+<<<<<<< HEAD
                 Skin Care Clinic
+=======
+                Sri Skin Clinic • 1st Floor
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </span>
             </div>
 
             <div className="absolute bottom-3 left-3 right-3 z-10 flex flex-wrap items-center justify-between gap-2 bg-slate-900/95 backdrop-blur-md p-3 rounded-xl border border-slate-800">
               <div className="text-left text-xs">
+<<<<<<< HEAD
                 <span className="font-bold text-white block">123, Palani Rd</span>
                 <span className="text-slate-400">Udumalaipettai Municipality, Tamil Nadu 642126</span>
+=======
+                <span className="font-bold text-white block">295, 1st Floor, Sathy Main Road</span>
+                <span className="text-slate-400">Chidambaram Nagar, Saravanampatti, Coimbatore - 641035</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </div>
               <a
                 href={CLINIC_INFO.mapsUrl}
@@ -105,7 +122,11 @@ export const LocationHoursSection: React.FC<LocationHoursSectionProps> = ({ onOp
                 <span>Landmarks &amp; Location</span>
               </div>
               <p className="text-slate-500">
+<<<<<<< HEAD
                 On Palani Road, Udumalaipettai Municipality.
+=======
+                Opposite Central Park Apartment &amp; Amman Kovil on Sathy Main Highway, Saravanampatti.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </p>
             </div>
 
@@ -145,7 +166,11 @@ export const LocationHoursSection: React.FC<LocationHoursSectionProps> = ({ onOp
             {/* Hours Schedule Table */}
             <div className="mt-4 space-y-2">
               <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">
+<<<<<<< HEAD
                 Dr. Lakshmi Consultation Timings
+=======
+                Dr. V. Kavitha Consultation Timings
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </span>
               <div className="space-y-1.5 text-xs">
                 {CLINIC_HOURS.map((h) => {
@@ -185,11 +210,19 @@ export const LocationHoursSection: React.FC<LocationHoursSectionProps> = ({ onOp
                 className="flex items-center justify-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-3 px-3 rounded-2xl text-xs transition-colors border border-slate-200"
               >
                 <Phone className="w-3.5 h-3.5 text-teal-600 shrink-0" />
+<<<<<<< HEAD
                 <span>Call 9245312200</span>
               </a>
 
               <a
                 href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20want%20to%20visit%20Skin%20Care%20Clinic`}
+=======
+                <span>Call 9585526107</span>
+              </a>
+
+              <a
+                href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20want%20to%20visit%20Sri%20Skin%20Clinic`}
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold py-3 px-3 rounded-2xl text-xs transition-colors border border-emerald-200"

@@ -36,6 +36,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
     { label: 'Treatments', href: '#services' },
     { label: 'Clinic & Hours', href: '#location' },
     { label: 'Charges & Insurance', href: '#insurance' },
+<<<<<<< HEAD
+=======
+    { label: 'Patient Guide', href: '#patient-info' },
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -50,7 +54,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
   return (
     <header id="clinic-header" className="sticky top-0 z-40 bg-slate-50/95 backdrop-blur-md px-4 sm:px-6 lg:px-8 py-3 transition-all">
       {/* Top Announcement Bar (Compact) */}
+<<<<<<< HEAD
       <div className="max-w-7xl mx-auto mb-2 hidden sm:flex items-center justify-between text-xs px-2 text-slate-500">
+=======
+      <div className="max-w-7xl mx-auto mb-2 flex items-center justify-between text-xs px-2 text-slate-500">
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
         <div className="flex items-center gap-3">
           <a
             href={CLINIC_INFO.mapsUrl}
@@ -59,7 +67,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
             className="hidden sm:inline-flex items-center gap-1.5 text-slate-600 hover:text-teal-600 transition-colors"
           >
             <MapPin className="w-3.5 h-3.5 text-teal-600 shrink-0" />
+<<<<<<< HEAD
             <span className="truncate max-w-sm">Palani Rd, Udumalaipettai</span>
+=======
+            <span className="truncate max-w-sm">Sathy Main Rd, Saravanampatti, Coimbatore</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
           </a>
 
           <div className="inline-flex items-center gap-1.5">
@@ -73,7 +85,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="flex items-center gap-3">
+=======
+        <div className="flex items-center gap-4">
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
           <a
             href={`tel:${CLINIC_INFO.phoneClean}`}
             className="inline-flex items-center gap-1.5 text-slate-800 hover:text-teal-600 font-bold transition-colors"
@@ -86,11 +102,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
             onClick={onOpenLookup}
             id="lookup-header-btn"
             type="button"
+<<<<<<< HEAD
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-teal-700 hover:text-teal-900 bg-teal-50 hover:bg-teal-100 border border-teal-200/80 px-2.5 py-1 rounded-lg transition-colors cursor-pointer"
             title="Check My Live Booking Status & History"
           >
             <Search className="w-3 h-3 text-teal-600" />
             <span>My Live Booking Status &amp; History</span>
+=======
+            className="hidden sm:inline-flex items-center gap-1 text-slate-600 hover:text-teal-600 transition-colors cursor-pointer"
+          >
+            <Search className="w-3 h-3" />
+            <span>Look Up Booking</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
           </button>
 
           {onOpenAdmin && (
@@ -121,10 +144,17 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
           </div>
           <div>
             <h1 className="text-base sm:text-lg font-bold tracking-tight text-slate-900 leading-tight group-hover:text-teal-600 transition-colors">
+<<<<<<< HEAD
               Skin Care Clinic
             </h1>
             <span className="text-[11px] font-bold text-teal-600 uppercase tracking-widest block">
               Dermatology & Skin Care • Udumalaipettai
+=======
+              Sri Skin Clinic
+            </h1>
+            <span className="text-[11px] font-bold text-teal-600 uppercase tracking-widest block">
+              Dermatology &amp; Cosmetology • Coimbatore
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             </span>
           </div>
         </a>
@@ -145,7 +175,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
         {/* Action Buttons */}
         <div className="hidden sm:flex items-center gap-2.5">
           <a
+<<<<<<< HEAD
             href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20would%20like%20to%20inquire%20about%20a%20skin%20consultation%20at%20Skin%20Care%20Clinic`}
+=======
+            href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20would%20like%20to%20inquire%20about%20a%20skin%20consultation%20at%20Sri%20Skin%20Clinic`}
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             target="_blank"
             rel="noopener noreferrer"
             className="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 px-3.5 py-2.5 rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5"
@@ -224,15 +258,36 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
             </button>
 
             <a
+<<<<<<< HEAD
               href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20would%20like%20to%20inquire%20about%20a%20skin%20consultation`}
+=======
+              href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20would%20like%20to%20inquire%20about%20a%20skin%20consultation`}
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm"
             >
               <MessageCircle className="w-4 h-4 text-white" />
+<<<<<<< HEAD
               <span>WhatsApp: 9245312200</span>
             </a>
 
+=======
+              <span>WhatsApp: 9585526107</span>
+            </a>
+
+            <button
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                onOpenLookup();
+              }}
+              className="w-full flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-medium py-2.5 px-4 rounded-xl text-sm"
+            >
+              <Search className="w-4 h-4 text-slate-500" />
+              <span>Look Up Existing Booking</span>
+            </button>
+
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             <a
               href={`tel:${CLINIC_INFO.phoneClean}`}
               className="w-full flex items-center justify-center gap-2 border border-slate-300 text-slate-700 py-2.5 px-4 rounded-xl text-sm font-medium hover:bg-slate-50"

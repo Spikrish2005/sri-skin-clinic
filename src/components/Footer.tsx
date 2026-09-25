@@ -35,16 +35,27 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenLookup, onO
               </div>
               <div>
                 <span className="block text-base font-bold text-white leading-tight">
+<<<<<<< HEAD
                   Skin Care Clinic
                 </span>
                 <span className="block text-[11px] text-teal-400 font-semibold uppercase tracking-wider">
                   Dr. Lakshmi • Udumalaipettai
+=======
+                  Sri Skin Clinic
+                </span>
+                <span className="block text-[11px] text-teal-400 font-semibold uppercase tracking-wider">
+                  Dr. V. Kavitha • Saravanampatti, Coimbatore
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </span>
               </div>
             </div>
 
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-md">
+<<<<<<< HEAD
               Specialized dermatology, skin care treatments, pimple & acne care, and face treatments led by <strong>Dr. Lakshmi</strong>, Skin Care Specialist on Palani Rd, Udumalaipettai.
+=======
+              Specialized dermatology, cosmetology, laser treatments, PRP hair restoration, and minor dermatosurgery led by <strong>Dr. V. Kavitha</strong>, M.B.B.S., M.D., D.V.L. (Skin) on Sathy Main Road, Coimbatore.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             </p>
 
             <div className="flex flex-wrap gap-2 pt-1">
@@ -61,11 +72,19 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenLookup, onO
                 className="inline-flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-4 py-2 rounded-xl text-xs transition-colors border border-slate-700 cursor-pointer"
               >
                 <Search className="w-3.5 h-3.5" />
+<<<<<<< HEAD
                 <span>Booking History &amp; Status</span>
               </button>
 
               <a
                 href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20would%20like%20to%20consult%20at%20Skin%20Care%20Clinic`}
+=======
+                <span>Lookup Booking</span>
+              </button>
+
+              <a
+                href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20would%20like%20to%20consult%20at%20Sri%20Skin%20Clinic`}
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-600 text-white font-medium px-4 py-2 rounded-xl text-xs transition-colors cursor-pointer"
@@ -109,15 +128,25 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenLookup, onO
           {/* Col 3: Contact & Google Maps Direct Link */}
           <div className="lg:col-span-4 space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-white block">
+<<<<<<< HEAD
               Udumalaipettai Clinic &amp; Contact
+=======
+              Coimbatore Clinic &amp; Contact
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             </span>
             <div className="space-y-2.5 text-xs text-slate-300">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
                 <div>
+<<<<<<< HEAD
                   <p className="font-semibold text-white">123, Palani Rd</p>
                   <p className="text-slate-400">Udumalaipettai Municipality</p>
                   <p className="text-slate-400">Tamil Nadu 642126</p>
+=======
+                  <p className="font-semibold text-white">295, 1st Floor, Sathy Main Road</p>
+                  <p className="text-slate-400">Opposite Central Park Apartment, Amman Kovil</p>
+                  <p className="text-slate-400">Saravanampatti, Coimbatore, Tamil Nadu 641035</p>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                   <a
                     href={CLINIC_INFO.mapsUrl}
                     target="_blank"
@@ -148,7 +177,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenLookup, onO
         {/* Bottom copyright & disclaimers */}
         <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
           <p>
+<<<<<<< HEAD
             &copy; {currentYear} Skin Care Clinic • Dr. Lakshmi. All rights reserved.
+=======
+            &copy; {currentYear} Sri Skin Clinic • Dr. V. Kavitha, M.B.B.S., M.D., D.V.L. (Skin). All rights reserved.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
           </p>
           <div className="flex items-center gap-4 flex-wrap">
             <span className="hover:text-slate-400">Ethical Dermatology</span>

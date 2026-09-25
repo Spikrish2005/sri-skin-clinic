@@ -37,11 +37,19 @@ export const ContactSection: React.FC = () => {
               Patient Support &amp; Enquiries
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+<<<<<<< HEAD
               Contact Skin Care Clinic
             </h2>
           </div>
           <p className="text-slate-500 text-xs sm:text-sm max-w-md leading-relaxed">
             Reach out to Dr. Lakshmi regarding skin, hair, consultations, or procedural inquiries in Udumalaipettai.
+=======
+              Contact Sri Skin Clinic
+            </h2>
+          </div>
+          <p className="text-slate-500 text-xs sm:text-sm max-w-md leading-relaxed">
+            Reach out to Dr. V. Kavitha regarding skin, hair, laser consultations, or procedural inquiries in Saravanampatti, Coimbatore.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
           </p>
         </div>
       </div>
@@ -89,7 +97,11 @@ export const ContactSection: React.FC = () => {
               <div>
                 <span className="block text-[11px] text-slate-400 uppercase font-semibold">WhatsApp Chat</span>
                 <a
+<<<<<<< HEAD
                   href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20have%20an%20inquiry%20regarding%20Skin%20Care%20Clinic`}
+=======
+                  href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20have%20an%20inquiry%20regarding%20Sri%20Skin%20Clinic`}
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold text-emerald-700 hover:underline text-sm transition-colors"
@@ -140,8 +152,13 @@ export const ContactSection: React.FC = () => {
               </div>
               <div>
                 <span className="block text-[11px] text-slate-400 uppercase font-semibold">Consultation Hours</span>
+<<<<<<< HEAD
                 <span className="font-semibold text-slate-800 block">Mon - Sat: 12:00 PM - 6:00 PM (Mon till 6:30 PM)</span>
                 <span className="font-semibold text-slate-800 block">Sun: Closed (Holiday)</span>
+=======
+                <span className="font-semibold text-slate-800 block">Mon - Sat: 10:00 AM - 1:30 PM &amp; 5:00 PM - 8:30 PM</span>
+                <span className="font-semibold text-slate-800 block">Sun: 10:30 AM - 1:30 PM (Prior Appt)</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </div>
             </div>
           </div>
@@ -153,7 +170,11 @@ export const ContactSection: React.FC = () => {
             Send a Consultation Request or Question
           </h3>
           <p className="text-xs text-slate-400 mb-6">
+<<<<<<< HEAD
             Dr. Lakshmi&apos;s team will review your query and respond via call or WhatsApp.
+=======
+            Dr. V. Kavitha&apos;s team will review your query and respond via call or WhatsApp.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
           </p>
 
           {isSubmitted ? (
@@ -161,7 +182,11 @@ export const ContactSection: React.FC = () => {
               <CheckCircle2 className="w-10 h-10 text-teal-600 mx-auto" />
               <h4 className="text-base font-bold text-teal-900">Enquiry Received!</h4>
               <p className="text-xs text-teal-800 max-w-md mx-auto">
+<<<<<<< HEAD
                 Thank you, <strong>{name}</strong>. Skin Care Clinic will get back to you at <strong>{phone || email}</strong> shortly.
+=======
+                Thank you, <strong>{name}</strong>. Sri Skin Clinic will get back to you at <strong>{phone || email}</strong> shortly.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </p>
               <button
                 type="button"

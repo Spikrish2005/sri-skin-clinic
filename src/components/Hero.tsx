@@ -12,7 +12,10 @@ import {
   HeartPulse,
   MessageCircle,
   UserCheck,
+<<<<<<< HEAD
   Search,
+=======
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
 } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
 import { getAvailableDates } from '../utils/dateUtils';
@@ -28,7 +31,11 @@ interface HeroProps {
   onOpenLookup: () => void;
 }
 
+<<<<<<< HEAD
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
+=======
+export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
   const [selectedSpecialty, setSelectedSpecialty] = useState('clinical-dermatology');
   const [selectedDayIndex, setSelectedDayIndex] = useState(0);
   const [selectedSlot, setSelectedSlot] = useState('10:00 AM');
@@ -57,12 +64,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
                 Advanced Dermatology &amp; Cosmetology
               </span>
               <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[11px] font-bold border border-teal-200">
+<<<<<<< HEAD
                 Udumalaipettai • Tamil Nadu
+=======
+                Saravanampatti • Coimbatore
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-3 tracking-tight">
               Flawless Skin &amp; Hair Care by <br className="hidden sm:inline" />
+<<<<<<< HEAD
               <span className="text-teal-700">Dr. Lakshmi</span>
             </h2>
 
@@ -72,18 +84,37 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
 
             <p className="text-slate-500 text-sm sm:text-base max-w-2xl leading-relaxed">
               At <strong className="text-slate-900">Skin Care Clinic</strong>, we provide personalized skin care, expert pimple & acne treatment, face treatments, medication consultations, and comprehensive dermatological care on Palani Rd, Udumalaipettai.
+=======
+              <span className="text-teal-700">Dr. V. Kavitha</span>
+            </h2>
+
+            <p className="text-sm sm:text-base font-semibold text-slate-700 mb-2">
+              M.B.B.S., M.D., D.V.L. (Skin) • Consultant Dermatologist &amp; Cosmetologist
+            </p>
+
+            <p className="text-slate-500 text-sm sm:text-base max-w-2xl leading-relaxed">
+              At <strong className="text-slate-900">Sri Skin Clinic</strong>, we provide personalized, evidence-based dermatological care, laser scar reduction, chemical peels, PRP hair growth therapy, and minor dermatosurgery on Sathy Main Road, Saravanampatti.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             </p>
           </div>
 
           {/* Stats Bar with Vertical Dividers */}
           <div className="flex flex-wrap items-center gap-4 sm:gap-8 mt-8 pt-6 border-t border-slate-100">
             <div className="flex flex-col">
+<<<<<<< HEAD
               <span className="text-2xl sm:text-3xl font-bold text-teal-600">10+</span>
+=======
+              <span className="text-2xl sm:text-3xl font-bold text-teal-600">12+</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               <span className="text-xs text-slate-400 font-medium uppercase tracking-wider">Years Experience</span>
             </div>
             <div className="w-px h-10 bg-slate-200"></div>
             <div className="flex flex-col">
+<<<<<<< HEAD
               <span className="text-2xl sm:text-3xl font-bold text-teal-600">1.6k+</span>
+=======
+              <span className="text-2xl sm:text-3xl font-bold text-teal-600">10k+</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               <span className="text-xs text-slate-400 font-medium uppercase tracking-wider">Happy Patients</span>
             </div>
             <div className="w-px h-10 bg-slate-200"></div>
@@ -100,7 +131,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
             <div className="flex items-center justify-between mb-4">
               <div>
                 <h3 className="text-lg sm:text-xl font-bold text-slate-900">Book Skin Consultation</h3>
+<<<<<<< HEAD
                 <span className="text-xs text-teal-600 font-semibold">With Dr. Lakshmi</span>
+=======
+                <span className="text-xs text-teal-600 font-semibold">With Dr. V. Kavitha</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </div>
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" title="Live booking online" />
             </div>
@@ -115,12 +150,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
                   onChange={(e) => setSelectedSpecialty(e.target.value)}
                   className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 font-medium outline-hidden focus:ring-2 focus:ring-teal-500"
                 >
+<<<<<<< HEAD
                   <option value="pimple-acne-treatment">Pimple & Acne Treatment</option>
                   <option value="skin-care-dermatology">Skin Care Dermatology</option>
                   <option value="face-treatments">Face Treatments & Brightening</option>
                   <option value="medication-ointment-consultation">Medication & Ointment Consultation</option>
                   <option value="hair-care-treatment">Hair Care & Scalp Treatment</option>
                   <option value="general-skin-consultation">General Skin Consultation</option>
+=======
+                  <option value="clinical-dermatology">Acne, Eczema &amp; Skin Allergies</option>
+                  <option value="cosmetology-aesthetics">Chemical Peels &amp; Skin Glow</option>
+                  <option value="laser-skin-treatments">Acne Scar Laser &amp; Hair Reduction</option>
+                  <option value="hair-trichology-prp">PRP Hair Loss &amp; Regrowth</option>
+                  <option value="dermatosurgery-warts">Wart, Mole &amp; Tag Removal</option>
+                  <option value="pediatric-dermatology">Pediatric (Child) Skin Care</option>
+                  <option value="tele-dermatology">Online Video Consultation</option>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </select>
               </div>
 
@@ -188,6 +233,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
             <Calendar className="w-4 h-4" />
             <span>Book for {availableDays[selectedDayIndex]?.dayName} at {selectedSlot}</span>
           </button>
+<<<<<<< HEAD
 
           <button
             type="button"
@@ -197,6 +243,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
             <Search className="w-3.5 h-3.5" />
             <span>Check My Live Booking Status &amp; History &rarr;</span>
           </button>
+=======
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
         </div>
 
         {/* Bento Cell 3: Saturated Accent Highlight (4 cols) */}
@@ -209,6 +257,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
             <ul className="space-y-2.5 opacity-95 text-xs sm:text-sm">
               <li className="flex items-center gap-2.5">
                 <div className="w-2 h-2 bg-teal-300 rounded-full shrink-0"></div>
+<<<<<<< HEAD
                 Pimple & Acne Treatment
               </li>
               <li className="flex items-center gap-2.5">
@@ -222,6 +271,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
               <li className="flex items-center gap-2.5">
                 <div className="w-2 h-2 bg-teal-300 rounded-full shrink-0"></div>
                 Medication & Ointment Consultation
+=======
+                Acne, Pimple Scars &amp; Pigmentation Peels
+              </li>
+              <li className="flex items-center gap-2.5">
+                <div className="w-2 h-2 bg-teal-300 rounded-full shrink-0"></div>
+                Autologous PRP Hair Regrowth Therapy
+              </li>
+              <li className="flex items-center gap-2.5">
+                <div className="w-2 h-2 bg-teal-300 rounded-full shrink-0"></div>
+                Radiofrequency Wart, Mole &amp; Tag Removal
+              </li>
+              <li className="flex items-center gap-2.5">
+                <div className="w-2 h-2 bg-teal-300 rounded-full shrink-0"></div>
+                Chronic Eczema, Psoriasis &amp; Skin Allergies
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </li>
             </ul>
           </div>
@@ -235,7 +299,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
               <span>&rarr;</span>
             </a>
             <span className="text-[11px] bg-teal-900 px-2.5 py-1 rounded-lg text-teal-200 font-medium">
+<<<<<<< HEAD
               6 Specialties
+=======
+              7 Specialties
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             </span>
           </div>
         </div>
@@ -243,7 +311,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
         {/* Bento Cell 4: Contact & Hours Bento Card (4 cols) */}
         <div className="lg:col-span-4 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
           <div>
+<<<<<<< HEAD
             <h3 className="text-lg font-bold text-slate-900 mb-3">Udumalaipettai Clinic</h3>
+=======
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Saravanampatti Clinic</h3>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             <div className="space-y-3 mb-3">
               <div className="flex gap-3 items-start">
                 <div className="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center text-teal-600 shrink-0">
@@ -265,8 +337,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
+<<<<<<< HEAD
                   <p className="text-xs font-bold text-slate-900">123, Palani Rd</p>
                   <p className="text-[11px] text-slate-500">Udumalaipettai Municipality, Tamil Nadu 642126</p>
+=======
+                  <p className="text-xs font-bold text-slate-900">295, 1st Floor, Sathy Main Road</p>
+                  <p className="text-[11px] text-slate-500">Opposite Central Park Apartment, Saravanampatti</p>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </div>
               </div>
             </div>
@@ -275,11 +352,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
           <div className="bg-slate-50 p-3 rounded-2xl border border-slate-100 space-y-1">
             <div className="flex justify-between text-[11px] font-bold text-slate-600">
               <span>Morning Session:</span>
+<<<<<<< HEAD
               <span className="font-mono text-slate-900">12:00 PM - 06:00 PM</span>
             </div>
             <div className="flex justify-between text-[11px] font-bold text-slate-600">
               <span>Sunday:</span>
               <span className="font-mono text-slate-900">Closed (Holiday)</span>
+=======
+              <span className="font-mono text-slate-900">10:00 AM - 01:30 PM</span>
+            </div>
+            <div className="flex justify-between text-[11px] font-bold text-slate-600">
+              <span>Evening Session:</span>
+              <span className="font-mono text-slate-900">05:00 PM - 08:30 PM</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             </div>
           </div>
         </div>
@@ -295,12 +380,20 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLookup }) => {
                 WhatsApp Inquiry
               </h4>
               <p className="text-xs text-slate-400 mt-0.5">
+<<<<<<< HEAD
                 Quick chat: 9245312200
+=======
+                Quick chat: 9585526107
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
               </p>
             </div>
           </div>
           <a
+<<<<<<< HEAD
             href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20would%20like%20to%20consult%20at%20Skin%20Care%20Clinic`}
+=======
+            href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20would%20like%20to%20consult%20at%20Sri%20Skin%20Clinic`}
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             target="_blank"
             rel="noopener noreferrer"
             className="px-3 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs flex items-center gap-1 shrink-0 transition-colors"

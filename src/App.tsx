@@ -15,8 +15,11 @@ import { Appointment } from './types';
 import { Calendar, Phone, CheckCircle2, X, MessageCircle } from 'lucide-react';
 import { CLINIC_INFO } from './data/clinicData';
 
+<<<<<<< HEAD
 import { saveUserBookingId, saveUserPatientPhone, clearAllAppointmentHistory, getStoredAppointments } from './utils/storage';
 
+=======
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
 export default function App() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [isLookupOpen, setIsLookupOpen] = useState(false);
@@ -28,6 +31,7 @@ export default function App() {
   const [bookingStep, setBookingStep] = useState<1 | 2 | 3 | 4 | 5 | undefined>(undefined);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
+<<<<<<< HEAD
   // Clear legacy demo sample data for live production readiness
   useEffect(() => {
     const existing = getStoredAppointments();
@@ -37,6 +41,8 @@ export default function App() {
     }
   }, []);
 
+=======
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
   // Global secret shortcut for Doctor & Admin staff (Alt + D or Ctrl + Shift + D)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -65,9 +71,13 @@ export default function App() {
   };
 
   const handleSuccessBooking = (appt: Appointment) => {
+<<<<<<< HEAD
     if (appt.id) saveUserBookingId(appt.id);
     if (appt.patientPhone) saveUserPatientPhone(appt.patientPhone);
     setToastMessage(`Appointment ${appt.id} confirmed for ${appt.patientName} on ${appt.date} at ${appt.time}! View history anytime in "My Bookings & Status".`);
+=======
+    setToastMessage(`Appointment ${appt.id} confirmed for ${appt.patientName} on ${appt.date} at ${appt.time}!`);
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
     setTimeout(() => {
       setToastMessage(null);
     }, 8000);
@@ -147,7 +157,11 @@ export default function App() {
           className="flex-1 flex items-center justify-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-2.5 px-3 rounded-lg text-xs border border-slate-300"
         >
           <Phone className="w-4 h-4 text-teal-600" />
+<<<<<<< HEAD
           <span>Call 9245312200</span>
+=======
+          <span>Call 9585526107</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
         </a>
         <button
           onClick={() => handleOpenBooking()}

@@ -1,7 +1,12 @@
 import { Appointment, DoctorBlockedSlot } from '../types';
 
+<<<<<<< HEAD
 const STORAGE_KEY = 'skin_care_clinic_appointments';
 const BLOCKED_SLOTS_KEY = 'skin_care_clinic_blocked_slots';
+=======
+const STORAGE_KEY = 'sri_skin_clinic_appointments';
+const BLOCKED_SLOTS_KEY = 'sri_skin_clinic_blocked_slots';
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
 
 function getTodayString(): string {
   const d = new Date();
@@ -21,13 +26,162 @@ function getTomorrowString(): string {
 }
 
 function getInitialSampleAppointments(): Appointment[] {
+<<<<<<< HEAD
   return [];
+=======
+  const today = getTodayString();
+  const tomorrow = getTomorrowString();
+
+  return [
+    {
+      id: 'SRI-9585-4102',
+      serviceId: 'clinical-dermatology',
+      serviceName: 'Clinical Dermatology & Acne Protocol',
+      providerId: 'dr-kavitha',
+      providerName: 'Dr. V. Kavitha (M.B.B.S., M.D., D.V.L.)',
+      visitType: 'in-person',
+      date: today,
+      time: '10:30 AM',
+      tokenNumber: 1,
+      patientName: 'Karthik Subramanian',
+      patientEmail: 'karthik.sub@example.com',
+      patientPhone: '9842211098',
+      dateOfBirth: '1995-04-12',
+      isNewPatient: true,
+      insuranceProvider: 'Direct Self-Pay / Cash / UPI',
+      reasonForVisit: 'Persistent cystic acne on cheeks and jawline since 4 months. Needs clinical peel recommendation.',
+      createdAt: new Date(Date.now() - 3600000 * 2).toISOString(),
+      status: 'confirmed',
+      clinicalStatus: 'arrived',
+      arrivedAt: '10:18 AM',
+      consultationFee: 500,
+      paymentStatus: 'paid_upi',
+    },
+    {
+      id: 'SRI-9585-2831',
+      serviceId: 'hair-trichology',
+      serviceName: 'PRP Hair Regrowth & Scalp Dermatosurgery',
+      providerId: 'dr-kavitha',
+      providerName: 'Dr. V. Kavitha (M.B.B.S., M.D., D.V.L.)',
+      visitType: 'in-person',
+      date: today,
+      time: '11:00 AM',
+      tokenNumber: 2,
+      patientName: 'Anitha Rajendran',
+      patientEmail: 'anitha.raj@example.com',
+      patientPhone: '9443388712',
+      dateOfBirth: '1990-11-23',
+      isNewPatient: false,
+      insuranceProvider: 'Star Health & Allied Insurance',
+      insurancePolicyId: 'SH-8842109',
+      reasonForVisit: 'PRP Session 3 follow-up. Checking vertex hair density progression.',
+      createdAt: new Date(Date.now() - 3600000 * 5).toISOString(),
+      status: 'confirmed',
+      clinicalStatus: 'in_consultation',
+      arrivedAt: '10:45 AM',
+      consultationStartedAt: '10:58 AM',
+      consultationFee: 2500,
+      paymentStatus: 'paid_upi',
+      doctorNotes: 'Scalp trichoscopy shows active follicular sprouting along midline. PRP cycle 3 initiated with sterile micro-needling.',
+    },
+    {
+      id: 'SRI-9585-7719',
+      serviceId: 'cosmetology-peels',
+      serviceName: 'Medical Cosmetology & Chemical Peels',
+      providerId: 'dr-kavitha',
+      providerName: 'Dr. V. Kavitha (M.B.B.S., M.D., D.V.L.)',
+      visitType: 'in-person',
+      date: today,
+      time: '11:30 AM',
+      tokenNumber: 3,
+      patientName: 'Vigneshwaran P.',
+      patientPhone: '9585544120',
+      dateOfBirth: '1998-08-15',
+      isNewPatient: true,
+      insuranceProvider: 'Direct Self-Pay / Cash / UPI',
+      reasonForVisit: 'Hyperpigmentation on forehead and post-inflammatory dark spots.',
+      createdAt: new Date(Date.now() - 3600000 * 8).toISOString(),
+      status: 'confirmed',
+      clinicalStatus: 'scheduled',
+      consultationFee: 500,
+      paymentStatus: 'pending',
+    },
+    {
+      id: 'SRI-9585-6124',
+      serviceId: 'laser-scar',
+      serviceName: 'Advanced Laser & Scar Revision Therapy',
+      providerId: 'dr-kavitha',
+      providerName: 'Dr. V. Kavitha (M.B.B.S., M.D., D.V.L.)',
+      visitType: 'in-person',
+      date: today,
+      time: '05:30 PM',
+      tokenNumber: 4,
+      patientName: 'Divya Muralikrishnan',
+      patientPhone: '9894452109',
+      dateOfBirth: '1992-02-18',
+      isNewPatient: true,
+      insuranceProvider: 'Direct Self-Pay / Cash / UPI',
+      reasonForVisit: 'Old chickenpox scars on cheek and laser resurfacing inquiry.',
+      createdAt: new Date(Date.now() - 3600000 * 12).toISOString(),
+      status: 'confirmed',
+      clinicalStatus: 'scheduled',
+      consultationFee: 500,
+      paymentStatus: 'pending',
+    },
+    {
+      id: 'SRI-9585-9941',
+      serviceId: 'pediatric-dermatology',
+      serviceName: 'Pediatric & Neonatal Dermatology',
+      providerId: 'dr-kavitha',
+      providerName: 'Dr. V. Kavitha (M.B.B.S., M.D., D.V.L.)',
+      visitType: 'in-person',
+      date: tomorrow,
+      time: '10:30 AM',
+      tokenNumber: 1,
+      patientName: 'Master Rithvik (Parents: Sanjay & Meera)',
+      patientPhone: '9789912440',
+      dateOfBirth: '2021-06-10',
+      isNewPatient: true,
+      insuranceProvider: 'Direct Self-Pay / Cash / UPI',
+      reasonForVisit: 'Atopic dermatitis rash and itchy flexural eczema on elbows and knees.',
+      createdAt: new Date(Date.now() - 3600000 * 14).toISOString(),
+      status: 'confirmed',
+      clinicalStatus: 'scheduled',
+      consultationFee: 500,
+      paymentStatus: 'pending',
+    },
+    {
+      id: 'SRI-9585-3310',
+      serviceId: 'tele-dermatology',
+      serviceName: 'Online Teledermatology & E-Prescription',
+      providerId: 'dr-kavitha',
+      providerName: 'Dr. V. Kavitha (M.B.B.S., M.D., D.V.L.)',
+      visitType: 'telehealth',
+      date: tomorrow,
+      time: '06:00 PM',
+      tokenNumber: 2,
+      patientName: 'Deepak Mohan (NRI - Dubai)',
+      patientEmail: 'deepak.m@example.com',
+      patientPhone: '9840012399',
+      dateOfBirth: '1987-09-05',
+      isNewPatient: false,
+      insuranceProvider: 'Direct Self-Pay / Cash / UPI',
+      reasonForVisit: 'Remote follow up for Psoriasis scalp maintenance lotion and digital prescription renewal.',
+      createdAt: new Date(Date.now() - 3600000 * 20).toISOString(),
+      status: 'confirmed',
+      clinicalStatus: 'scheduled',
+      consultationFee: 500,
+      paymentStatus: 'paid_upi',
+    },
+  ];
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
 }
 
 export function getStoredAppointments(): Appointment[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) {
+<<<<<<< HEAD
       return [];
     }
     const parsed = JSON.parse(raw);
@@ -37,6 +191,21 @@ export function getStoredAppointments(): Appointment[] {
     return parsed;
   } catch {
     return [];
+=======
+      const initial = getInitialSampleAppointments();
+      saveStoredAppointments(initial);
+      return initial;
+    }
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed) || parsed.length === 0) {
+      const initial = getInitialSampleAppointments();
+      saveStoredAppointments(initial);
+      return initial;
+    }
+    return parsed;
+  } catch {
+    return getInitialSampleAppointments();
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
   }
 }
 
@@ -48,6 +217,7 @@ export function saveStoredAppointments(appointments: Appointment[]): void {
   }
 }
 
+<<<<<<< HEAD
 const USER_PHONE_KEY = 'sri_user_patient_phone';
 const RECENT_BOOKINGS_KEY = 'sri_user_recent_bookings';
 
@@ -133,6 +303,8 @@ export function getAppointmentsForPatient(queryPhoneOrCode?: string): Appointmen
   });
 }
 
+=======
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
 export function addAppointment(newAppt: Appointment): void {
   const list = getStoredAppointments();
   // Assign token number for that date
@@ -147,11 +319,16 @@ export function addAppointment(newAppt: Appointment): void {
   };
   const updated = [enrichedAppt, ...list];
   saveStoredAppointments(updated);
+<<<<<<< HEAD
   if (enrichedAppt.id) saveUserBookingId(enrichedAppt.id);
   if (enrichedAppt.patientPhone) saveUserPatientPhone(enrichedAppt.patientPhone);
 }
 
 
+=======
+}
+
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
 export function updateAppointmentStatus(
   id: string,
   status: 'confirmed' | 'rescheduled' | 'cancelled',

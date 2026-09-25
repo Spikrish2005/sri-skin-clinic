@@ -37,11 +37,27 @@ export function getClinicOpenStatus(): {
       nextOpenText = 'Evening Session • Closes at 8:30 PM';
     } else {
       isOpen = false;
+<<<<<<< HEAD
       nextOpenText = dayOfWeek === 6 ? 'Opens Monday at 10:00 AM (Sunday Holiday)' : 'Opens tomorrow at 10:00 AM';
     }
   } else if (isSunday) {
     isOpen = false;
     nextOpenText = 'Sunday Weekly Holiday • Opens Monday at 10:00 AM';
+=======
+      nextOpenText = dayOfWeek === 6 ? 'Opens Sunday at 10:30 AM (Prior Appt)' : 'Opens tomorrow at 10:00 AM';
+    }
+  } else if (isSunday) {
+    if (currentMinutes >= 630 && currentMinutes < 810) {
+      isOpen = true;
+      nextOpenText = 'Sunday Clinic • Closes at 1:30 PM';
+    } else if (currentMinutes < 630) {
+      isOpen = false;
+      nextOpenText = 'Opens Sunday at 10:30 AM';
+    } else {
+      isOpen = false;
+      nextOpenText = 'Opens Monday at 10:00 AM';
+    }
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
   }
 
   const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -82,15 +98,22 @@ export function getAvailableDates(daysAhead: number = 14): {
       year: 'numeric',
     });
 
+<<<<<<< HEAD
     const isSun = d.getDay() === 0;
 
+=======
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
     dates.push({
       dateString,
       dayName,
       fullDayName,
       dayNumber,
       monthName,
+<<<<<<< HEAD
       isAvailable: !isSun, // Sunday is weekly holiday
+=======
+      isAvailable: true, // All days open including Sunday morning
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
       displayFormatted,
     });
   }
@@ -107,8 +130,20 @@ export function getTimeSlotsForDate(dateString: string): {
   const dayOfWeek = dateObj.getDay();
 
   if (dayOfWeek === 0) {
+<<<<<<< HEAD
     // Sunday: Closed (Holiday)
     return [];
+=======
+    // Sunday: Morning only 10:30 AM - 1:30 PM
+    return [
+      { time: '10:30 AM', period: 'morning' as const, isAvailable: true },
+      { time: '11:00 AM', period: 'morning' as const, isAvailable: true },
+      { time: '11:30 AM', period: 'morning' as const, isAvailable: true },
+      { time: '12:00 PM', period: 'morning' as const, isAvailable: true },
+      { time: '12:30 PM', period: 'morning' as const, isAvailable: true },
+      { time: '01:00 PM', period: 'afternoon' as const, isAvailable: true },
+    ];
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
   }
 
   // Weekdays & Saturday: Morning (10:00 AM - 1:30 PM) & Evening (5:00 PM - 8:30 PM)

@@ -39,7 +39,11 @@ export const InsuranceSection: React.FC<InsuranceSectionProps> = ({ onOpenBookin
             </h2>
           </div>
           <p className="text-slate-500 text-xs sm:text-sm max-w-md leading-relaxed">
+<<<<<<< HEAD
             At Skin Care Clinic, we uphold transparent, affordable dermatological consultation charges with zero hidden hospital markups.
+=======
+            At Sri Skin Clinic, we uphold transparent, affordable dermatological consultation charges with zero hidden hospital markups.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
           </p>
         </div>
       </div>
@@ -111,14 +115,22 @@ export const InsuranceSection: React.FC<InsuranceSectionProps> = ({ onOpenBookin
               <h3 className="text-base font-bold text-slate-900">Standard Consultation &amp; Care Fees</h3>
             </div>
             <p className="text-xs text-slate-500 leading-relaxed">
+<<<<<<< HEAD
               Transparent, competitive fee schedule for Dr. Lakshmi&apos;s skin &amp; hair treatments.
+=======
+              Transparent, competitive fee schedule for Dr. V. Kavitha&apos;s skin &amp; hair treatments.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             </p>
 
             <div className="space-y-2 pt-2 border-t border-slate-100 text-xs">
               <div className="flex items-center justify-between p-3 rounded-xl bg-slate-50">
                 <div>
                   <span className="font-semibold text-slate-800 block">Dermatology Specialist Consultation</span>
+<<<<<<< HEAD
                   <span className="text-[11px] text-slate-400">Dr. Lakshmi in-clinic physical exam</span>
+=======
+                  <span className="text-[11px] text-slate-400">Dr. V. Kavitha in-clinic physical exam</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </div>
                 <span className="font-bold text-teal-700 font-mono text-sm">₹400 - ₹500</span>
               </div>

@@ -54,7 +54,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   // Form State
   const [selectedServiceId, setSelectedServiceId] = useState<string>(initialServiceId || 'clinical-dermatology');
   const [visitType, setVisitType] = useState<'in-person' | 'telehealth'>('in-person');
+<<<<<<< HEAD
   const [selectedProviderId, setSelectedProviderId] = useState<string>(initialProviderId || 'dr-lakshmi');
+=======
+  const [selectedProviderId, setSelectedProviderId] = useState<string>(initialProviderId || 'dr-kavitha');
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
 
   const availableDates = getAvailableDates(14);
   const [selectedDate, setSelectedDate] = useState<string>(
@@ -206,11 +210,19 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
   const handleAddToCalendar = () => {
     if (!confirmedAppointment) return;
+<<<<<<< HEAD
     const title = encodeURIComponent(`Skin Consultation: ${confirmedAppointment.serviceName} at Skin Care Clinic`);
     const details = encodeURIComponent(
       `Appointment with Dr. Lakshmi\nPatient: ${confirmedAppointment.patientName}\nAppointment ID: ${confirmedAppointment.id}\nClinic Phone: +91 9245312200\nAddress: 123, Palani Rd, Udumalaipettai Municipality, Tamil Nadu 642126`
     );
     const location = encodeURIComponent('123, Palani Rd, Udumalaipettai Municipality, Tamil Nadu 642126');
+=======
+    const title = encodeURIComponent(`Skin Consultation: ${confirmedAppointment.serviceName} at Sri Skin Clinic`);
+    const details = encodeURIComponent(
+      `Appointment with Dr. V. Kavitha\nPatient: ${confirmedAppointment.patientName}\nAppointment ID: ${confirmedAppointment.id}\nClinic Phone: +91 9585526107\nAddress: 295, 1st Floor, Sathy Main Road, Saravanampatti, Coimbatore`
+    );
+    const location = encodeURIComponent('295, 1st Floor, Sathy Main Road, Saravanampatti, Coimbatore 641035');
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
     const dateFormatted = confirmedAppointment.date.replace(/-/g, '');
     const gCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&location=${location}&dates=${dateFormatted}T050000Z/${dateFormatted}T060000Z`;
     window.open(gCalUrl, '_blank', 'noopener,noreferrer');
@@ -231,7 +243,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             </div>
             <div>
               <h2 className="text-lg font-bold leading-tight">Book Skin Consultation</h2>
+<<<<<<< HEAD
               <p className="text-xs text-teal-300">Skin Care Clinic • Dr. Lakshmi • Udumalaipettai, Tamil Nadu</p>
+=======
+              <p className="text-xs text-teal-300">Sri Skin Clinic • Dr. V. Kavitha • Saravanampatti, Coimbatore</p>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
             </div>
           </div>
           <button
@@ -311,7 +327,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     }`}
                   >
                     <Building className="w-3.5 h-3.5" />
+<<<<<<< HEAD
                     <span>In-Clinic (Udumalaipettai)</span>
+=======
+                    <span>In-Clinic (Saravanampatti)</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                   </button>
                   <button
                     type="button"
@@ -382,7 +402,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               <div>
                 <h3 className="text-base font-bold text-slate-900">Step 2: Specialist Doctor</h3>
                 <p className="text-xs text-slate-500">
+<<<<<<< HEAD
                   All patients at Skin Care Clinic are personally treated by Dr. Lakshmi.
+=======
+                  All patients at Sri Skin Clinic are personally treated by Dr. V. Kavitha.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </p>
               </div>
 
@@ -394,16 +418,27 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   </div>
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
+<<<<<<< HEAD
                       <span className="text-base font-bold text-slate-900">Dr. Lakshmi</span>
+=======
+                      <span className="text-base font-bold text-slate-900">Dr. V. Kavitha</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                       <span className="text-[11px] bg-teal-700 text-white px-2 py-0.5 rounded-full font-bold">
                         Lead Specialist
                       </span>
                     </div>
                     <p className="text-xs font-semibold text-teal-800">
+<<<<<<< HEAD
                       Skin Care Specialist • 10+ Years Clinical Practice
                     </p>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Consultant Dermatologist and Skin Care Specialist in Udumalaipettai.
+=======
+                      M.B.B.S., M.D., D.V.L. (Skin) • 12+ Years Clinical Practice
+                    </p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Consultant Dermatologist, Cosmetologist, and Dermatosurgeon in Coimbatore.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                     </p>
                   </div>
                 </div>
@@ -428,7 +463,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               <div>
                 <h3 className="text-base font-bold text-slate-900">Step 3: Select Consultation Date &amp; Slot</h3>
                 <p className="text-xs text-slate-500">
+<<<<<<< HEAD
                   Select your preferred slot between 12:00 PM and 6:00 PM.
+=======
+                  Select your preferred morning (10:00 AM - 1:30 PM) or evening (5:00 PM - 8:30 PM) slot.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </p>
               </div>
 
@@ -472,7 +511,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       {availableDates.find((d) => d.dateString === selectedDate)?.displayFormatted || selectedDate}
                     </span>
                   </label>
+<<<<<<< HEAD
                   <span className="text-[11px] text-slate-500">IST (Udumalaipettai, India)</span>
+=======
+                  <span className="text-[11px] text-slate-500">IST (Coimbatore, India)</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </div>
 
                 {timeSlots.length === 0 ? (
@@ -484,7 +527,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     {/* Morning Session */}
                     <div>
                       <span className="text-xs font-bold text-slate-600 block mb-1.5">
+<<<<<<< HEAD
                         Morning Session (12:00 PM - 06:00 PM)
+=======
+                        Morning Session (10:00 AM - 01:30 PM)
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                       </span>
                       <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
                         {timeSlots
@@ -707,7 +754,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   <span>Appointment Summary Review</span>
                 </div>
                 <p>
+<<<<<<< HEAD
                   <strong>Doctor:</strong> Dr. Lakshmi, Skin Care Specialist
+=======
+                  <strong>Doctor:</strong> Dr. V. Kavitha, M.B.B.S., M.D., D.V.L. (Skin)
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </p>
                 <p>
                   <strong>Treatment:</strong> {currentService.title} ({visitType === 'in-person' ? 'In-Clinic' : 'Online Video'})
@@ -716,7 +767,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   <strong>Date &amp; Time:</strong> {selectedDate} at {selectedTime}
                 </p>
                 <p>
+<<<<<<< HEAD
                   <strong>Location:</strong> 123, Palani Rd, Udumalaipettai Municipality, Tamil Nadu
+=======
+                  <strong>Location:</strong> 295, 1st Floor, Sathy Main Road, Saravanampatti, Coimbatore
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </p>
               </div>
             </form>
@@ -733,7 +788,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 <span className="text-xs uppercase tracking-widest text-emerald-700 font-bold">Appointment Confirmed</span>
                 <h3 className="text-2xl font-bold font-serif text-slate-900">You Are All Set!</h3>
                 <p className="text-xs text-slate-500">
+<<<<<<< HEAD
                   Your appointment with Dr. Lakshmi has been booked. Save your confirmation code below.
+=======
+                  Your appointment with Dr. V. Kavitha has been booked. Save your confirmation code below.
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                 </p>
               </div>
 
@@ -768,7 +827,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   </div>
                   <div>
                     <span className="text-slate-500 block">Doctor:</span>
+<<<<<<< HEAD
                     <span className="font-bold text-slate-900">Dr. Lakshmi (Skin Care Specialist)</span>
+=======
+                    <span className="font-bold text-slate-900">Dr. V. Kavitha (D.V.L.)</span>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                   </div>
                   <div>
                     <span className="text-slate-500 block">Visit Format:</span>
@@ -779,9 +842,15 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 <div className="bg-white p-3 rounded-lg border border-slate-200 text-xs text-slate-600 space-y-1">
                   <p className="font-semibold text-slate-800 flex items-center gap-1">
                     <Building className="w-3.5 h-3.5 text-teal-600" />
+<<<<<<< HEAD
                     <span>Skin Care Clinic:</span>
                   </p>
                   <p>123, Palani Rd, Udumalaipettai Municipality, Tamil Nadu 642126</p>
+=======
+                    <span>Sri Skin Clinic:</span>
+                  </p>
+                  <p>295, 1st Floor, Sathy Main Road, Chidambaram Nagar, opposite Central Park apartment, Amman Kovil, Saravanampatti, Coimbatore - 641035</p>
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                   <p className="text-[11px] text-teal-700 font-bold">Contact: +91 {CLINIC_INFO.phone}</p>
                 </div>
 
@@ -794,7 +863,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               {/* Action Buttons: WhatsApp Notification, Add to Calendar, Print, Close */}
               <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
                 <a
+<<<<<<< HEAD
                   href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20have%20booked%20an%20appointment%20(ID:%20${confirmedAppointment.id})%20for%20${confirmedAppointment.patientName}%20on%20${confirmedAppointment.date}%20at%20${confirmedAppointment.time}`}
+=======
+                  href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20have%20booked%20an%20appointment%20(ID:%20${confirmedAppointment.id})%20for%20${confirmedAppointment.patientName}%20on%20${confirmedAppointment.date}%20at%20${confirmedAppointment.time}`}
+>>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2.5 rounded-lg shadow-xs cursor-pointer"
