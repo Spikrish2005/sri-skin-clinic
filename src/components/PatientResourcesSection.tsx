@@ -30,7 +30,7 @@ export const PatientResourcesSection: React.FC<PatientResourcesSectionProps> = (
     {
       step: '01',
       title: 'Book Appointment',
-      desc: 'Schedule your preferred morning or evening slot online, or call/WhatsApp us at +91 9585526107.',
+      desc: 'Schedule your preferred morning or evening slot online, or call/WhatsApp us at +91 9245312200.',
     },
     {
       step: '02',
@@ -39,12 +39,12 @@ export const PatientResourcesSection: React.FC<PatientResourcesSectionProps> = (
     },
     {
       step: '03',
-      title: 'Visit Saravanampatti Clinic',
-      desc: 'Arrive at 295, 1st Floor, Sathy Main Road (Opposite Central Park Apartment, Amman Kovil).',
+      title: 'Visit Udumalaipettai Clinic',
+      desc: 'Arrive at 123, Palani Rd (Udumalaipettai Municipality).',
     },
     {
       step: '04',
-      title: 'Consult Dr. V. Kavitha',
+      title: 'Consult Dr. Lakshmi',
       desc: 'Receive thorough dermatoscopic evaluation, clear root cause diagnosis, and personalized skincare protocol.',
     },
   ];
@@ -63,7 +63,7 @@ export const PatientResourcesSection: React.FC<PatientResourcesSectionProps> = (
             </h2>
           </div>
           <p className="text-slate-500 text-xs sm:text-sm max-w-md leading-relaxed">
-            Helpful guidance to ensure a seamless consultation experience at Sri Skin Clinic in Coimbatore.
+            Helpful guidance to ensure a seamless consultation experience at Skin Care Clinic in Udumalaipettai.
           </p>
         </div>
       </div>
@@ -133,12 +133,12 @@ export const PatientResourcesSection: React.FC<PatientResourcesSectionProps> = (
         <div className="space-y-1 text-center sm:text-left">
           <h3 className="text-xl font-bold text-white">Ready for Healthy, Radiant Skin &amp; Hair?</h3>
           <p className="text-xs sm:text-sm text-slate-400">
-            Consult Dr. V. Kavitha, M.B.B.S., M.D., D.V.L. (Skin) at Sri Skin Clinic, Saravanampatti.
+            Consult Dr. Lakshmi, Skin Care Specialist at Skin Care Clinic, Udumalaipettai.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3 shrink-0">
           <a
-            href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20want%20to%20schedule%20a%20skin%20consultation`}
+            href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20want%20to%20schedule%20a%20skin%20consultation`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm px-5 py-3.5 rounded-2xl shadow-sm transition-colors cursor-pointer flex items-center gap-2"

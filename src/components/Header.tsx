@@ -59,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
             className="hidden sm:inline-flex items-center gap-1.5 text-slate-600 hover:text-teal-600 transition-colors"
           >
             <MapPin className="w-3.5 h-3.5 text-teal-600 shrink-0" />
-            <span className="truncate max-w-sm">Sathy Main Rd, Saravanampatti, Coimbatore</span>
+            <span className="truncate max-w-sm">Palani Rd, Udumalaipettai</span>
           </a>
 
           <div className="inline-flex items-center gap-1.5">
@@ -121,10 +121,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
           </div>
           <div>
             <h1 className="text-base sm:text-lg font-bold tracking-tight text-slate-900 leading-tight group-hover:text-teal-600 transition-colors">
-              Sri Skin Clinic
+              Skin Care Clinic
             </h1>
             <span className="text-[11px] font-bold text-teal-600 uppercase tracking-widest block">
-              Dermatology &amp; Cosmetology • Coimbatore
+              Dermatology & Skin Care • Udumalaipettai
             </span>
           </div>
         </a>
@@ -145,7 +145,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
         {/* Action Buttons */}
         <div className="hidden sm:flex items-center gap-2.5">
           <a
-            href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20would%20like%20to%20inquire%20about%20a%20skin%20consultation%20at%20Sri%20Skin%20Clinic`}
+            href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20would%20like%20to%20inquire%20about%20a%20skin%20consultation%20at%20Skin%20Care%20Clinic`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 px-3.5 py-2.5 rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5"
@@ -224,13 +224,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenLookup, onO
             </button>
 
             <a
-              href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20would%20like%20to%20inquire%20about%20a%20skin%20consultation`}
+              href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20would%20like%20to%20inquire%20about%20a%20skin%20consultation`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm"
             >
               <MessageCircle className="w-4 h-4 text-white" />
-              <span>WhatsApp: 9585526107</span>
+              <span>WhatsApp: 9245312200</span>
             </a>
 
             <a

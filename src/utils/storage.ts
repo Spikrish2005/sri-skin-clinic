@@ -1,7 +1,7 @@
 import { Appointment, DoctorBlockedSlot } from '../types';
 
-const STORAGE_KEY = 'sri_skin_clinic_appointments';
-const BLOCKED_SLOTS_KEY = 'sri_skin_clinic_blocked_slots';
+const STORAGE_KEY = 'skin_care_clinic_appointments';
+const BLOCKED_SLOTS_KEY = 'skin_care_clinic_blocked_slots';
 
 function getTodayString(): string {
   const d = new Date();

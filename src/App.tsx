@@ -147,7 +147,7 @@ export default function App() {
           className="flex-1 flex items-center justify-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-2.5 px-3 rounded-lg text-xs border border-slate-300"
         >
           <Phone className="w-4 h-4 text-teal-600" />
-          <span>Call 9585526107</span>
+          <span>Call 9245312200</span>
         </a>
         <button
           onClick={() => handleOpenBooking()}

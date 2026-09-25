@@ -173,8 +173,8 @@ export const AppointmentLookupModal: React.FC<AppointmentLookupModalProps> = ({
           <div class="card">
             <div class="header">
               <div>
-                <div class="logo">Sri Skin Clinic</div>
-                <div style="font-size: 12px; color: #64748b;">Dr. V. Kavitha, M.B.B.S., M.D., D.V.L. • Coimbatore</div>
+                <div class="logo">Skin Care Clinic</div>
+                <div style="font-size: 12px; color: #64748b;">Dr. Lakshmi, Skin Care Specialist • Udumalaipettai</div>
               </div>
               <div class="badge">Token #${appt.tokenNumber || 1} • ${appt.status.toUpperCase()}</div>
             </div>
@@ -230,12 +230,12 @@ export const AppointmentLookupModal: React.FC<AppointmentLookupModalProps> = ({
 
             <div class="box">
               <strong>Clinic Address:</strong><br/>
-              295, 1st Floor, Sathy Main Road, Saravanampatti, Coimbatore - 641035<br/>
-              Phone: +91 9585526107 / 0422 2666107
+              123, Palani Rd, Udumalaipettai Municipality, Tamil Nadu 642126<br/>
+              Phone: +91 9245312200
             </div>
 
             <div class="footer">
-              Printed from Sri Skin Clinic Patient Portal • ${new Date().toLocaleString()}
+              Printed from Skin Care Clinic Patient Portal • ${new Date().toLocaleString()}
             </div>
           </div>
           <script>window.print();</script>
@@ -292,7 +292,7 @@ export const AppointmentLookupModal: React.FC<AppointmentLookupModalProps> = ({
                   Patient Portal
                 </span>
               </h2>
-              <p className="text-xs text-teal-300">Sri Skin Clinic • Dr. V. Kavitha (Coimbatore)</p>
+              <p className="text-xs text-teal-300">Skin Care Clinic • Dr. Lakshmi (Udumalaipettai)</p>
             </div>
           </div>
           <button
@@ -689,7 +689,7 @@ export const AppointmentLookupModal: React.FC<AppointmentLookupModalProps> = ({
                               <option value="Schedule Conflict">Schedule Conflict / Urgent Work</option>
                               <option value="Health Improved">Symptoms Improved / Not Needed</option>
                               <option value="Booked Mistake">Booked wrong service/date by mistake</option>
-                              <option value="Visiting Later">Will visit Sri Skin Clinic at a later date</option>
+                              <option value="Visiting Later">Will visit Skin Care Clinic at a later date</option>
                             </select>
                           </div>
 

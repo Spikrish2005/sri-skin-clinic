@@ -30,14 +30,14 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ onBookWithDoctor
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <span className="text-teal-600 font-bold uppercase tracking-widest text-xs mb-2 block">
-              Consultant Dermatologist &amp; Cosmetologist
+              Consultant Dermatologist &amp; Skin Care Specialist
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
               Meet Our Specialist Doctor
             </h2>
           </div>
           <p className="text-slate-500 text-xs sm:text-sm max-w-lg leading-relaxed">
-            All clinical and aesthetic consultations at Sri Skin Clinic are personally evaluated and treated by Dr. V. Kavitha.
+            All clinical and aesthetic consultations at Skin Care Clinic are personally evaluated and treated by Dr. Lakshmi.
           </p>
         </div>
       </div>
@@ -59,13 +59,13 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ onBookWithDoctor
                   <span>Sole Lead Consultant</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-tight">
-                  Dr. V. Kavitha
+                  Dr. Lakshmi
                 </h3>
                 <p className="text-xs sm:text-sm font-bold text-teal-700 mt-0.5">
-                  M.B.B.S., M.D., D.V.L. (Skin)
+                  Skin Care Specialist
                 </p>
                 <p className="text-xs text-slate-500 mt-0.5">
-                  Dermatologist, Cosmetologist &amp; Dermatosurgeon
+                  Dermatologist &amp; Skin Care Specialist
                 </p>
               </div>
             </div>
@@ -82,7 +82,7 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ onBookWithDoctor
                   <span>Qualifications</span>
                 </div>
                 <p className="text-xs font-semibold text-slate-800">
-                  M.B.B.S., M.D. in Dermatology, Venereology &amp; Leprosy (D.V.L.)
+                  Skin Care Specialist
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ onBookWithDoctor
                   <span>Clinical Experience</span>
                 </div>
                 <p className="text-xs font-semibold text-slate-800">
-                  12+ Years of Specialized Dermatological Practice in Coimbatore
+                  10+ Years of Specialized Dermatological Practice in Udumalaipettai
                 </p>
               </div>
 
@@ -112,7 +112,7 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ onBookWithDoctor
                   <span>Consultation Timings</span>
                 </div>
                 <p className="text-xs font-semibold text-slate-800">
-                  Mon - Sat: 10:00 AM - 1:30 PM &amp; 5:00 PM - 8:30 PM
+                  Mon - Sat: 12:00 PM - 6:00 PM (Mon till 6:30 PM)
                 </p>
               </div>
             </div>
@@ -125,11 +125,11 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ onBookWithDoctor
               className="flex-1 inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-semibold py-3.5 px-5 rounded-2xl shadow-xs transition-colors cursor-pointer"
             >
               <Calendar className="w-4 h-4 text-teal-400" />
-              <span>Book Appointment with Dr. V. Kavitha</span>
+              <span>Book Appointment with Dr. Lakshmi</span>
             </button>
 
             <a
-              href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20would%20like%20to%20book%20a%20consultation%20at%20Sri%20Skin%20Clinic`}
+              href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20would%20like%20to%20book%20a%20consultation%20at%20Skin%20Care%20Clinic`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold py-3.5 px-5 rounded-2xl shadow-xs transition-colors cursor-pointer"
@@ -155,30 +155,30 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ onBookWithDoctor
               <ul className="space-y-3 text-xs sm:text-sm text-teal-100">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                  <span><strong>Acne &amp; Scar Revision:</strong> Medical peels, subcision, and laser scar resurfacing.</span>
+                  <span><strong>Pimple &amp; Acne Care:</strong> Comprehensive acne treatment, scar reduction, and breakout management.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                  <span><strong>Hair Fall &amp; PRP Therapy:</strong> Follicular mapping, platelet-rich plasma, and regrowth serums.</span>
+                  <span><strong>Skin Care Dermatology:</strong> Eczema, psoriasis, allergies, fungal infections, and skin disorders.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                  <span><strong>Pigmentation &amp; Glow:</strong> Melasma treatments, tan removal, and pre-bridal packages.</span>
+                  <span><strong>Face Treatments:</strong> Skin brightening, pigmentation removal, and rejuvenation therapy.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                  <span><strong>Radiofrequency Removal:</strong> Quick excision for warts, moles, DPNs, and skin tags.</span>
+                  <span><strong>Medication Guidance:</strong> Personalized prescriptions, ointments, and skincare product recommendations.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                  <span><strong>Chronic Skin Care:</strong> Psoriasis, eczema, urticaria, fungal infections, and vitiligo.</span>
+                  <span><strong>Hair & Scalp Care:</strong> Hair fall, dandruff, scalp infections, and hair health management.</span>
                 </li>
               </ul>
             </div>
 
             <div className="pt-4 border-t border-teal-800 mt-4 flex items-center justify-between text-xs text-teal-300">
-              <span>Saravanampatti, Coimbatore</span>
-              <span className="font-mono">+91 95855 26107</span>
+              <span>Udumalaipettai, Tamil Nadu</span>
+              <span className="font-mono">+91 92453 12200</span>
             </div>
           </div>
 

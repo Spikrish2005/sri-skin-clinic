@@ -35,16 +35,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenLookup, onO
               </div>
               <div>
                 <span className="block text-base font-bold text-white leading-tight">
-                  Sri Skin Clinic
+                  Skin Care Clinic
                 </span>
                 <span className="block text-[11px] text-teal-400 font-semibold uppercase tracking-wider">
-                  Dr. V. Kavitha • Saravanampatti, Coimbatore
+                  Dr. Lakshmi • Udumalaipettai
                 </span>
               </div>
             </div>
 
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-md">
-              Specialized dermatology, cosmetology, laser treatments, PRP hair restoration, and minor dermatosurgery led by <strong>Dr. V. Kavitha</strong>, M.B.B.S., M.D., D.V.L. (Skin) on Sathy Main Road, Coimbatore.
+              Specialized dermatology, skin care treatments, pimple & acne care, and face treatments led by <strong>Dr. Lakshmi</strong>, Skin Care Specialist on Palani Rd, Udumalaipettai.
             </p>
 
             <div className="flex flex-wrap gap-2 pt-1">
@@ -65,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenLookup, onO
               </button>
 
               <a
-                href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20V.%20Kavitha,%20I%20would%20like%20to%20consult%20at%20Sri%20Skin%20Clinic`}
+                href={`https://wa.me/${CLINIC_INFO.whatsappNumber}?text=Hello%20Dr.%20Lakshmi,%20I%20would%20like%20to%20consult%20at%20Skin%20Care%20Clinic`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-600 text-white font-medium px-4 py-2 rounded-xl text-xs transition-colors cursor-pointer"
@@ -109,15 +109,15 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenLookup, onO
           {/* Col 3: Contact & Google Maps Direct Link */}
           <div className="lg:col-span-4 space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-white block">
-              Coimbatore Clinic &amp; Contact
+              Udumalaipettai Clinic &amp; Contact
             </span>
             <div className="space-y-2.5 text-xs text-slate-300">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-white">295, 1st Floor, Sathy Main Road</p>
-                  <p className="text-slate-400">Opposite Central Park Apartment, Amman Kovil</p>
-                  <p className="text-slate-400">Saravanampatti, Coimbatore, Tamil Nadu 641035</p>
+                  <p className="font-semibold text-white">123, Palani Rd</p>
+                  <p className="text-slate-400">Udumalaipettai Municipality</p>
+                  <p className="text-slate-400">Tamil Nadu 642126</p>
                   <a
                     href={CLINIC_INFO.mapsUrl}
                     target="_blank"
@@ -148,7 +148,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenLookup, onO
         {/* Bottom copyright & disclaimers */}
         <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
           <p>
-            &copy; {currentYear} Sri Skin Clinic • Dr. V. Kavitha, M.B.B.S., M.D., D.V.L. (Skin). All rights reserved.
+            &copy; {currentYear} Skin Care Clinic • Dr. Lakshmi. All rights reserved.
           </p>
           <div className="flex items-center gap-4 flex-wrap">
             <span className="hover:text-slate-400">Ethical Dermatology</span>
