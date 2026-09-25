@@ -15,11 +15,11 @@ import { Appointment } from './types';
 import { Calendar, Phone, CheckCircle2, X, MessageCircle } from 'lucide-react';
 import { CLINIC_INFO } from './data/clinicData';
 
-<<<<<<< HEAD
+ HEAD
 import { saveUserBookingId, saveUserPatientPhone, clearAllAppointmentHistory, getStoredAppointments } from './utils/storage';
 
-=======
->>>>>>> adf64258bb61a59f967a798407adb1049f3c0fb7
+
+ adf64258bb61a59f967a798407adb1049f3c0fb7
 export default function App() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [isLookupOpen, setIsLookupOpen] = useState(false);
